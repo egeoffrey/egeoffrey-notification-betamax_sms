@@ -1,0 +1,15 @@
+package: myhouse-notification-betamax-sms
+release: 1
+version: development
+git: myhouse-project/myhouse-notification-betamax-sms
+modules:
+  - notification/betamax-sms
+default_config:
+  - notification/betamax-sms:
+      hostname: www.freevoipdeal.com
+      ssl: false
+      username: 
+      password: 
+      from: 
+      to:
+        - +12345667
