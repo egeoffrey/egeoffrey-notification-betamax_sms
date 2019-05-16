@@ -10,4 +10,4 @@ FROM myhouseproject/myhouse-sdk-python:${ARCHITECTURE}-${MYHOUSE_SDK_VERSION}
 COPY . $WORKDIR
 
 ### define the modules provided which needs to be started
-ENV MYHOUSE_MODULES="notification/betamax-sms"
+ENV MYHOUSE_MODULES="notification/betamax_sms"

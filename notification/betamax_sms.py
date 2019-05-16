@@ -16,7 +16,7 @@ from sdk.module.notification import Notification
 import sdk.utils.web
 import sdk.utils.exceptions as exception
 
-class Sms(Notification):
+class Betamax_sms(Notification):
     # What to do when initializing
     def on_init(self):
         # constants
