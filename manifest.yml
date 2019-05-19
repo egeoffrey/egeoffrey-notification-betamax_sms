@@ -1,5 +1,5 @@
 package: myhouse-notification-betamax_sms
-release: 1
+revision: 1
 version: development
 git: myhouse-project/myhouse-notification-betamax_sms
 modules:
