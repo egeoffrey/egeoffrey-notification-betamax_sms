@@ -11,10 +11,10 @@
 # - NOTIFY: receive a notification request
 # OUTBOUND: 
 
-from sdk.module.notification import Notification
+from sdk.python.module.notification import Notification
 
-import sdk.utils.web
-import sdk.utils.exceptions as exception
+import sdk.python.utils.web
+import sdk.python.utils.exceptions as exception
 
 class Betamax_sms(Notification):
     # What to do when initializing
@@ -39,7 +39,7 @@ class Betamax_sms(Notification):
         protocol = "https://" if self.config["ssl"] else "http://"
         url = protocol+self.config["hostname"]+"/myaccount/sendsms.php?username="+self.config["username"]+"&password="+self.config["password"]+"&from="+str(self.config["from"])+"&to="+str(to)+"&text="+text
         try: 
-            response = sdk.utils.web.get(url)
+            response = sdk.python.utils.web.get(url)
         except Exception,e:
             self.log_warning("unable to connect to the sms module: "+exception.get(e))
             return False
