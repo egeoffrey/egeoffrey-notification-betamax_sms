@@ -1,9 +1,11 @@
+manifest_schema: 1
 package: myhouse-notification-betamax_sms
-revision: 4
+revision: 5
 version: development
 github: myhouse-project/myhouse-notification-betamax_sms
 dockerhub: myhouseproject/myhouse-notification-betamax_sms
 description: send out sms notifications (betamax voip service)
 tags: notification sms voip
 modules:
-  - notification/betamax_sms
+  - notification/betamax_sms:
+      description: send out sms notifications (betamax voip service)
