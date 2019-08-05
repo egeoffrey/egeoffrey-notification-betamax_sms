@@ -2,11 +2,12 @@ branch: development
 description: send out sms notifications (betamax voip service)
 dockerhub: myhouseproject/myhouse-notification-betamax_sms
 github: myhouse-project/myhouse-notification-betamax_sms
+icon: sms
 manifest_schema: 2
 modules:
 - notification/betamax_sms:
     description: send out sms notifications (betamax voip service)
 package: myhouse-notification-betamax_sms
-revision: 6
+revision: 7
 tags: notification sms voip
 version: 1.0
