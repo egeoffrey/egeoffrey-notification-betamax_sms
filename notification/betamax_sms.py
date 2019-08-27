@@ -51,7 +51,7 @@ class Betamax_sms(Notification):
     # What to do when ask to notify
     def on_notify(self, severity, text):
         text = "["+self.house["name"]+"] "+text
-        for to in self.config["to"]:
+        for to in self.config["to"].split(","):
             retries = self.max_retries
             while retries > 0 :
                 result = self.send_sms(to, text)
