@@ -63,4 +63,4 @@ notification sms voip
 
 ## Version
 
-The version of this egeoffrey-notification-betamax_sms is 1.0-10 on the development branch.
+The version of this egeoffrey-notification-betamax_sms is 1.0-11 on the master branch.
